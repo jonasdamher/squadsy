@@ -1,0 +1,21 @@
+$font-path: "/fonts/Montserrat";
+
+@font-face {
+    src: url("#{$font-path}/Montserrat-Regular.ttf") format("ttf");
+    font-family: "Montserrat";
+    font-style: normal;
+    font-display: swamp;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+.main-view {
+    width: 100%;
+    margin-left: 230px;
+
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
+}
