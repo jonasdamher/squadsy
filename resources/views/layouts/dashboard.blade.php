@@ -3,13 +3,13 @@
 @endpush
 
 @include('includes.header')
-@include('includes.nav')
 <div class="d-flex">
     @include('includes.menu')
     <!-- main -->
     <div class="main-view d-flex flex-column">
+        @include('includes.nav')
         <main>
-            <div class="container pt-4">
+            <div class="container">
                 <div class="row">
                     @include('layouts.'.$view)
                 </div>
