@@ -8,16 +8,42 @@
 .menu {
     width: 230px;
     position: fixed;
-    top: 54.22px;
+    top: 0;
     bottom: 0;
     left: 0;
     background: #fff;
     z-index: 10;
     visibility: visible;
 
+    .nav-link {
+        padding: 0.7rem 0;
+    }
+
     @media (max-width: 768px) {
+        top: 72px;
         visibility: hidden;
     }
+}
+
+.bg-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #00000029;
+    z-index: 9;
+    visibility: hidden;
+}
+
+.show ~ .bg-menu {
+    @media (max-width: 768px) {
+        visibility: visible;
+    }
+}
+
+.brand {
+    height: 72px;
 }
 
 .show {
