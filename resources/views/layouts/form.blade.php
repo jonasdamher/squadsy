@@ -1,19 +1,16 @@
 <div class="col-12">
-    <div class="d-flex justify-content-start align-items-center mb-3">
-        <a href="{{ URL::previous() }}" class="btn text-primary" title="Atrás">
+    <div class="d-flex justify-content-start align-items-center p-3 border-bottom">
+        <a href="{{ URL::previous() }}" class="btn text-primary d-flex mr-2" title="Atrás">
             <i class="fas fa-angle-left fa-2x"></i>
         </a>
-        <h1>
-
+        <h1 class="m-0">
             @yield('title')
         </h1>
     </div>
 </div>
 <div class="col-12">
-    <div class="card shadow-sm">
-        <div class="card-body">
-            @section('main')
-            @show
-        </div>
+    <div class="p-4">
+        @section('main')
+        @show
     </div>
 </div>

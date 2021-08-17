@@ -5,18 +5,19 @@
 @section('btn-create-url', 'articles/new')
 
 @section('main')
-<div class="d-flex justify-content-between align-items-center mb-3">
+<div class="d-flex justify-content-between align-items-center bg-light shadow-sm p-3 mb-3 border-rd-1">
 {{-- search --}}
 <form>
 <div class="form-group d-flex m-0">
+    <button type="button" class="btn btn-light" title="Buscar"><i class="fas fa-search"></i></button>
     <label for="search" class="sr-only">Búsqueda</label>
-    <input type="search" class="form-control mr-1" id="search" name="search" placeholder="Buscar...">
-    <button type="button" class="btn btn-primary" title="Buscar"><i class="fas fa-search"></i></button>
+    <input type="search" class="form-control mx-1" id="search" name="search" placeholder="Buscar...">
+    <button type="button" class="btn btn-light" title="Filtrar"><i class="fas fa-sliders-h"></i></button>
 </div>
 </form>
 {{-- dropdown --}}
 <div class="btn-group">
-<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
     aria-expanded="false" title="Configuración">
     <i class="fas fa-cog"></i>
 </button>
@@ -59,4 +60,21 @@
 </tbody>
 </table>
 </div>
+<nav aria-label="Page navigation example">
+<ul class="pagination m-0">
+<li class="page-item">
+    <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+    </a>
+</li>
+<li class="page-item"><a class="page-link" href="#">1</a></li>
+<li class="page-item"><a class="page-link" href="#">2</a></li>
+<li class="page-item"><a class="page-link" href="#">3</a></li>
+<li class="page-item">
+    <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+    </a>
+</li>
+</ul>
+</nav>
 @endSection
