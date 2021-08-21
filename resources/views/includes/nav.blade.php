@@ -4,10 +4,14 @@
             title="Menu de navegación">
             <i class="fas fa-bars fa-lg"></i>
         </button>
+        <h1 class="h2 m-0">@yield('title')</h1>
+
         <ul class="navbar-nav ml-auto">
+        
+
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" title="Perfil" id="dropdownUser" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" title="Perfil" id="dropdownUser" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-user-circle fa-lg"></i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right position-absolute" aria-labelledby="dropdownUser">
