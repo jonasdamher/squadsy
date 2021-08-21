@@ -2,12 +2,12 @@
     <script src="{{ mix('js/menu.js') }}"></script>
 @endpush
 
-@include('includes.header')
+@include('partials.header')
 <div class="d-flex">
-    @include('includes.menu')
+    @include('partials.menu')
     <!-- main -->
     <div class="main-view d-flex flex-column">
-        @include('includes.nav')
+        @include('partials.nav')
         <main>
             <div class="container-fluid">
                 <div class="row">
@@ -15,7 +15,7 @@
                 </div>
             </div>
         </main>
-        @include('includes.footer')
+        @include('partials.footer')
     </div>
 </div>
-@include('includes.tail')
+@include('partials.tail')

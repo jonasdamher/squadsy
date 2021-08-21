@@ -1,4 +1,4 @@
-    <div class="navbar-light menu menu-short border-right">
+    <div class="navbar-light menu border-right">
         <div class="d-flex flex-column">
             <div class="py-3 px-4 border-bottom brand d-flex justify-content-center">
                 <a class="navbar-brand m-0" href="#" title="squadsy">.SQ</a>
