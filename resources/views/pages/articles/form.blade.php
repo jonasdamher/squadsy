@@ -1,6 +1,7 @@
 @extends('layouts.dashboard',['view'=>'form'])
 
-@section('title', 'Nuevo artículo')
+@section('title', 'Artículos')
+@section('formName', 'Nuevo artículo')
 
 @section('main')
 <form>
