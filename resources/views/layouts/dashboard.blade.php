@@ -9,7 +9,7 @@
     <div class="main-view d-flex flex-column">
         @include('includes.nav')
         <main>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     @include('layouts.'.$view)
                 </div>
