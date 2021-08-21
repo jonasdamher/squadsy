@@ -55,3 +55,22 @@ span.icon {
     display: inline-flex;
     justify-content: center;
 }
+
+.menu-short {
+    @media (min-width: 769px) {
+        width: 92px;
+
+        .nav-item {
+            margin-bottom: 0.4rem;
+        }
+
+        .nav-link span:last-child {
+            display: none;
+        }
+
+        span.icon {
+            width: 44px;
+            font-size: 1.2rem;
+        }
+    }
+}
