@@ -13,6 +13,11 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/menu.js', 'public/js')
+    .js('resources/js/commons/*.js', 'public/js/api.js')
+
     .sass('resources/sass/app.scss', 'public/css')
+    .sass('resources/sass/dashboard.scss', 'public/css')
+
     .copyDirectory('resources/fonts/', 'public/fonts')
+    .copyDirectory('resources/images/', 'public/images')
     .sourceMaps();

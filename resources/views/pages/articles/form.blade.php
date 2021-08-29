@@ -28,3 +28,6 @@
     <button type="button" class="btn btn-primary">Guardar</button>
 </form>
 @endSection
+@push('scriptsTail')
+    <script src="{{ mix('js/api.js') }}"></script>
+@endpush

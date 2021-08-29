@@ -6,6 +6,7 @@
         <h2 class="h3 m-0">@yield('formName')</h2>
     </div>
 </div>
+
 <div class="col-12">
     <div class="mt-4">
         @section('main')

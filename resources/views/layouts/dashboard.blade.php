@@ -1,4 +1,8 @@
-@push('scriptsTail')
+@push('scripts-head')
+    <link rel="stylesheet" type="text/css" href="{{ mix('css/dashboard.css') }}">
+@endpush
+
+@push('scripts-tail')
     <script src="{{ mix('js/menu.js') }}"></script>
 @endpush
 

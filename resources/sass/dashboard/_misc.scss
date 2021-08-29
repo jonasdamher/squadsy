@@ -1,7 +1,5 @@
-$font-path: "/fonts/Montserrat";
-
 @font-face {
-    src: url("#{$font-path}/Montserrat-Regular.ttf") format("ttf");
+    src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
     font-family: "Montserrat";
     font-style: normal;
     font-display: swamp;
@@ -23,6 +21,10 @@ body {
 .menu-short ~ div ~ .main-view {
     @media (min-width: 769px) {
         margin-left: 92px;
+
+        .logo-lg {
+            display: none;
+        }
     }
 }
 
@@ -51,4 +53,24 @@ body {
     @media (max-width: 768px) {
         width: 100%;
     }
+}
+
+.icon-notify {
+    top: 6px;
+    right: 2px;
+    border: 1px solid #fff;
+}
+
+.border-bottom,
+.border-right {
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 3%) !important;
+}
+
+.logo {
+    width: 64px;
+    filter: drop-shadow(5px 3px 3px #00000013);
+}
+
+.logo-lg {
+    width: 128px;
 }

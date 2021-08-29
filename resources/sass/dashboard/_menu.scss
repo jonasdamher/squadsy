@@ -15,6 +15,14 @@
     z-index: 10;
     visibility: visible;
 
+    .logo {
+        display: none;
+    }
+
+    .logo-lg {
+        display: block;
+    }
+
     .nav-link {
         padding: 0.7rem 0;
     }
@@ -57,8 +65,24 @@ span.icon {
 }
 
 .menu-short {
+    .logo {
+        display: none;
+    }
+
+    .logo-lg {
+        display: block;
+    }
+
     @media (min-width: 769px) {
         width: 92px;
+
+        .logo {
+            display: block;
+        }
+
+        .logo-lg {
+            display: none;
+        }
 
         .nav-item {
             margin-bottom: 0.4rem;

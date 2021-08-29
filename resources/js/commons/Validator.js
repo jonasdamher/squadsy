@@ -51,6 +51,7 @@ class Validator {
         }
         return this;
     }
+    
     static isValid() {
         if (this.errors.length) {
             this.valid = false;
@@ -62,14 +63,14 @@ class Validator {
     }
 
     static #messages(type, name, length = '') {
-        let message = [
-            'string' = `El campo ${name} debe ser texto y números.`,
-            'number' = `El campo ${name} debe ser un número.`,
-            'boolean' = `El campo ${name} debe ser 0 o 1.`,
-            'required' = `El campo ${name} es obligatorio.`,
-            'max' = `El campo ${name} no puede ser mayor a ${length} caracteres.`,
-            'min' = `El campo ${name} no puede ser menor a ${length} caracteres.`
-        ];
+        let message = {
+            string: `El campo ${name} debe ser texto y números.`,
+            number: `El campo ${name} debe ser un número.`,
+            boolean: `El campo ${name} debe ser 0 o 1.`,
+            required: `El campo ${name} es obligatorio.`,
+            max: `El campo ${name} no puede ser mayor a ${length} caracteres.`,
+            min: `El campo ${name} no puede ser menor a ${length} caracteres.`
+        };
 
         this.errors.push(message[type]);
     }
