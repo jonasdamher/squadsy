@@ -2,56 +2,66 @@
 
 class Validator {
 
+    data = null;
+    fieldName = '';
+
     valid = true;
     errors = [];
 
-    static isString(data, fieldName) {
+    static field(data, fieldName) {
+        this.this.data = data.trim();
+        this.this.fieldName = fieldName;
 
-        if (!/^[a-zA-Z-0-9 ]+$/.test(data.trim())) {
-            this.#messages('string', fieldName);
+        return this;
+    }
+
+    static isString() {
+
+        if (!/^[a-zA-Z-0-9 ]+$/.test(this.data)) {
+            this.#messages('string');
         }
 
         return this;
     }
 
-    static isNumber(data, fieldName) {
+    static isNumber() {
 
-        if (!/^[0-9]+$/.test(data.trim())) {
-            this.#messages('number', fieldName);
+        if (!/^[0-9]+$/.test(this.data)) {
+            this.#messages('number');
         }
         return this;
     }
 
-    static isBoolean(data, fieldName) {
+    static isBoolean() {
 
-        if (!/^(0|1)+$/.test(data.trim())) {
-            this.#messages('boolean', fieldName);
+        if (!/^(0|1)+$/.test(this.data)) {
+            this.#messages('boolean');
         }
         return this;
     }
 
-    static required(data, fieldName) {
+    static required() {
 
-        if (!data.trim().length) {
-            this.#messages('required', fieldName);
+        if (!this.data.length) {
+            this.#messages('required');
         }
         return this;
     }
 
-    static minLength(data, min, fieldName) {
-        if (data.trim().length < min) {
-            this.#messages('min', fieldName, min);
+    static minLength(min) {
+        if (this.data.length < min) {
+            this.#messages('min', min);
         }
         return this;
     }
 
-    static maxLength(data, max, fieldName) {
-        if (data.trim().length > max) {
-            this.#messages('max', fieldName, max);
+    static maxLength(max) {
+        if (this.data.length > max) {
+            this.#messages('max', max);
         }
         return this;
     }
-    
+
     static isValid() {
         if (this.errors.length) {
             this.valid = false;
@@ -62,14 +72,14 @@ class Validator {
         }
     }
 
-    static #messages(type, name, length = '') {
+    static #messages(type, length = '') {
         let message = {
-            string: `El campo ${name} debe ser texto y números.`,
-            number: `El campo ${name} debe ser un número.`,
-            boolean: `El campo ${name} debe ser 0 o 1.`,
-            required: `El campo ${name} es obligatorio.`,
-            max: `El campo ${name} no puede ser mayor a ${length} caracteres.`,
-            min: `El campo ${name} no puede ser menor a ${length} caracteres.`
+            string: `El campo ${this.fieldName} debe ser texto y números.`,
+            number: `El campo ${this.fieldName} debe ser un número.`,
+            boolean: `El campo ${this.fieldName} debe ser 0 o 1.`,
+            required: `El campo ${this.fieldName} es obligatorio.`,
+            max: `El campo ${this.fieldName} no puede ser mayor a ${length} caracteres.`,
+            min: `El campo ${this.fieldName} no puede ser menor a ${length} caracteres.`
         };
 
         this.errors.push(message[type]);

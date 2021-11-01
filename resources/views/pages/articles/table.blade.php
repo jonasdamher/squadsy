@@ -12,12 +12,12 @@
             <label for="search" class="sr-only">Búsqueda</label>
             <input type="search" class="form-control mx-1" id="search" name="search" placeholder="Buscar...">
             {{-- filters --}}
-            <div class="btn-group">
-                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            <div>
+                <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" title="Filtrar">
                     <i class="fas fa-sliders-h"></i>
                 </button>
-                <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-menu dropdown-menu-right bg-white">
                     <button class="dropdown-item" type="button">Categorías</button>
                 </div>
             </div>
@@ -26,8 +26,8 @@
 @endSection
 
 @section('navbar-table-options')
-    <div class="btn-group ml-2">
-        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+    <div class="ml-2 d-flex">
+        <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
             title="Configuración">
             <i class="fas fa-ellipsis-v"></i>
         </button>

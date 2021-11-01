@@ -14,7 +14,7 @@
     background: #fff;
     z-index: 10;
     visibility: visible;
-
+    transition: .2s;
     .logo {
         display: none;
     }
@@ -30,6 +30,8 @@
     @media (max-width: 768px) {
         top: 72px;
         visibility: hidden;
+        transform: translateX(-229px);
+
     }
 }
 
@@ -56,6 +58,7 @@
 
 .show {
     visibility: visible;
+    transform: translateX(0px);
 }
 
 span.icon {

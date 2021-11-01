@@ -4,7 +4,6 @@
             title="Menu de navegación">
             <i class="fas fa-bars fa-lg"></i>
         </button>
-        <h1 class="h2 m-0">@yield('title')</h1>
 
         <ul class="navbar-nav ml-auto flex-row">
             <li class="nav-item position-relative">
