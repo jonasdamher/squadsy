@@ -9,8 +9,8 @@ class Validator {
     errors = [];
 
     static field(data, fieldName) {
-        this.this.data = data.trim();
-        this.this.fieldName = fieldName;
+        this.data = data.trim();
+        this.fieldName = fieldName;
 
         return this;
     }

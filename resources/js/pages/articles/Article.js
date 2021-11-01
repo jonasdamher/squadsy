@@ -1,6 +1,9 @@
 'use strict';
 
 class Article {
+    #name = '';
+    #barcode = 0;
+    #price = 0;
 
     constructor(name, barcode, price) {
         this.#name = name;

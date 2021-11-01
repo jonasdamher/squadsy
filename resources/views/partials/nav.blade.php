@@ -1,9 +1,9 @@
 <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
-        <button class="btn text-dark toggle-menu mr-2" type="button" aria-label="Menu de navegación"
+        <button class="btn text-primary toggle-menu mr-2" type="button" aria-label="Menu de navegación"
             title="Menu de navegación">
-            <i class="fas fa-bars fa-lg"></i>
-        </button>
+            <i class="fas fa-stream fa-lg"></i>
+         </button>
 
         <ul class="navbar-nav ml-auto flex-row">
             <li class="nav-item position-relative">

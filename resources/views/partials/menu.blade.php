@@ -1,5 +1,5 @@
-    <div class="navbar-light menu border-right">
-        <div class="d-flex flex-column">
+    <div class="navbar-light menu border-right navbar-main">
+        <div class="d-flex flex-column h-100">
             {{-- brand --}}
             <div class="py-3 px-4 border-bottom brand d-flex justify-content-center">
                 <a class="navbar-brand m-0 d-flex align-items-center" href="#" title="squadsy">
@@ -8,17 +8,11 @@
                 </a>
             </div>
             {{-- Menu --}}
-            <ul class="navbar-nav d-flex flex-column py-3 px-4 ">
+            <ul class="navbar-nav d-flex flex-column py-3 px-4 h-100 overflow-y-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#" title="Inicio">
-                        <span class="icon"><i class="fas fa-home"></i></span><span
-                            class="pl-2">Inicio</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" title="Incidencias">
-                        <span class="icon"><i class="fas fa-file"></i></span><span
-                            class="pl-2">Incidencias</span>
+                        <span class="icon"><i class="fas fa-chart-bar"></i></span><span
+                            class="pl-2">Tablero</span>
                     </a>
                 </li>
                 <li class="nav-item active">
@@ -34,6 +28,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#" title="Presupuestos">
+                        <span class="icon  "><i class="fas fa-file-invoice"></i></span><span
+                            class="pl-2">Presupuestos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#" title="Proveedores">
                         <span class="icon "><i class="fas fa-industry"></i></span><span
                             class="pl-2">Proveedores</span>
@@ -46,15 +46,39 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" title="Tiendas">
+                    <a class="nav-link" href="#" title="Puntos de venta">
                         <span class="icon  "><i class="fas fa-store-alt"></i></span><span
-                            class="pl-2">Tiendas</span>
+                            class="pl-2">Puntos de venta</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" title="Incidencias">
+                        <span class="icon"><i class="fas fa-file"></i></span><span
+                            class="pl-2">Incidencias</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" title="Usuarios">
                         <span class="icon  "><i class="fas fa-users"></i></span><span
                             class="pl-2">Usuarios</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" title="Sucursales">
+                        <span class="icon  "><i class="fas fa-hotel"></i></span><span
+                            class="pl-2">Sucursales</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" title="Manules">
+                        <span class="icon"><i class="fas fa-book"></i></span><span
+                            class="pl-2">Manules</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" title="Tarifas">
+                        <span class="icon  "><i class="fas fa-percent"></i></span><span
+                            class="pl-2">Tarifas</span>
                     </a>
                 </li>
             </ul>
