@@ -29,6 +29,5 @@
     </form>
 @endSection
 @push('scripts-tail')
-    <script src="{{ mix('js/api.js') }}"></script>
-     <script src="{{ mix('js/articles/article.js') }}"></script>
+
 @endpush

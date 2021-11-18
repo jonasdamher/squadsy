@@ -15,12 +15,12 @@
 </div>
 <div class="col-12">
 
-    <div class="d-flex justify-content-between align-items-center my-4">
+    <div class="row d-flex justify-content-between align-items-center my-4">
 
         @section('navbar-table')
         @show
-        <div class="d-flex">
-            <div class="ml-2">
+        <div class="col-md-8 d-flex mt-4 mt-md-0">
+            <div class="ml-auto">
                 <button type="button" class="btn btn-outline-primary" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false" title="Filtrar">
                     <span class="mr-2"><i class="fas fa-file-export"></i></span> Exportar
@@ -39,7 +39,7 @@
                 <div class="dropdown-menu dropdown-menu-right bg-white">
                     <button class="dropdown-item" type="button">Nombre</button>
                     <button class="dropdown-item" type="button">Código de barras</button>
-                 </div>
+                </div>
             </div>
             <div class=" ml-2">
                 <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"

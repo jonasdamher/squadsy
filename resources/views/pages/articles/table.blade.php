@@ -6,7 +6,7 @@
 
 @section('navbar-table')
     {{-- search --}}
-    <form class="form-search">
+    <form class="form-search col-md-4">
         <div class="form-group d-flex m-0">
             <button type="button" class="btn " title="Buscar"><i class="fas fa-search"></i></button>
             <label for="search" class="sr-only">Búsqueda</label>
