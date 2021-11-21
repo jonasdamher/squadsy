@@ -70,15 +70,21 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" title="Manules">
+                    <a class="nav-link" href="#" title="Manuales">
                         <span class="icon"><i class="fas fa-book"></i></span><span
-                            class="pl-2">Manules</span>
+                            class="pl-2">Manuales</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" title="Tarifas">
                         <span class="icon  "><i class="fas fa-percent"></i></span><span
                             class="pl-2">Tarifas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" title="Configuración">
+                        <span class="icon"><i class="fas fa-cog"></i></span><span
+                            class="pl-2">Configuración</span>
                     </a>
                 </li>
             </ul>
