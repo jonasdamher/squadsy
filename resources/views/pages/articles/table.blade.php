@@ -12,29 +12,35 @@
             <label for="search" class="sr-only">Búsqueda</label>
             <input type="search" class="form-control mx-1" id="search" name="search" placeholder="Buscar...">
             {{-- filters --}}
-            <div>
-                <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false" title="Filtrar">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="filtros" data-bs-toggle="dropdown"
+                    aria-expanded="false" title="Filtros">
                     <i class="fas fa-sliders-h"></i>
                 </button>
-                <div class="dropdown-menu dropdown-menu-right bg-white">
-                    <button class="dropdown-item" type="button">Categorías</button>
-                </div>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="filtros">
+                    <li>
+                        <button class="dropdown-item" type="button">Categorías</button>
+                    </li>
+                </ul>
             </div>
         </div>
     </form>
 @endSection
 
 @section('navbar-table-options')
-    <div class="ml-2 d-flex">
-        <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+
+    <div class="dropdown d-flex">
+        <button class="ms-2 btn dropdown-toggle" type="button" id="opciones" data-bs-toggle="dropdown" aria-expanded="false"
             title="Configuración">
             <i class="fas fa-ellipsis-v"></i>
         </button>
-        <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="/categories">Categorías</a>
-        </div>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="opciones">
+            <li>
+                <button class="dropdown-item" type="button">Categorías</button>
+            </li>
+        </ul>
     </div>
+
 @endSection
 
 @section('table')
