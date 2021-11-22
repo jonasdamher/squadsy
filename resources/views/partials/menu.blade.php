@@ -15,8 +15,8 @@
                             class="ps-2">Tablero</span>
                     </a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#" title="Artículos">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" title="Artículos">
                         <span class="icon "><i class="fas fa-box"></i></span><span
                             class="ps-2">Artículos</span>
                     </a>

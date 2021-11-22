@@ -27,7 +27,16 @@
                         <li> <a class="dropdown-item" href="#">
                                 <span class="icon pe-2"><i class="fas fa-cogs"></i></span>
                                 Configuración</a> </li>
-
+                        <li>
+                            <div class="dropdown-item">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="change-main-main">
+                                    <label class="form-check-label" for="change-main-main">
+                                        Menu
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
                         <li> <a class="dropdown-item" href="#">
                                 <span class="icon pe-2"><i class="fas fa-sign-out-alt"></i></span>
                                 Cerrar sesión</a>

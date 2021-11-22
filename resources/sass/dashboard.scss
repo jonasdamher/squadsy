@@ -2,18 +2,33 @@
 
 @import "dashboard/menu";
 @import "dashboard/misc";
+
+@font-face {
+  src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swamp;
+}
+
+body {
+  font-family: "Montserrat";
+}
 /* width */
 ::-webkit-scrollbar {
-    width: 7px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background-color: #fff; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background-color: $blue; 
-  }
- 
+  width: 3px;
+}
+
+input.form-control,
+textarea,
+select {
+  background-color: #fff;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: $blue;
+}

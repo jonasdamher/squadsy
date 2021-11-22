@@ -1,13 +1,4 @@
-@font-face {
-    src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
-    font-family: "Montserrat";
-    font-style: normal;
-    font-display: swamp;
-}
 
-body {
-    font-family: "Montserrat";
-}
 
 .main-view {
     width: 100%;
@@ -38,7 +29,7 @@ body {
     align-items: center;
 
     @media (max-width: 768px) {
-        width: 47px;
+        width: 42px;
         padding: 0;
         justify-content: center;
         border-radius: 50%;
@@ -74,3 +65,19 @@ body {
 .logo-lg {
     width: 128px;
 }
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50em;
+    background: url('/images/icons/times-solid.svg') no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  input[type="search"]:focus::-webkit-search-cancel-button {
+    opacity: .3;
+    pointer-events: all;
+  }
