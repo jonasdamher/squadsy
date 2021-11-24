@@ -28,14 +28,32 @@
             <div class="form-group d-flex m-0">
                 <button type="button" class="btn " title="Buscar"><i class="fas fa-search"></i></button>
                 <label for="search" class="sr-only">Búsqueda</label>
-                <input type="search" class="form-control mx-1" id="search" name="search" placeholder="Buscar...">
+                <input type="search" class="form-control" id="search" name="search" placeholder="Buscar...">
                 {{-- filters --}}
                 <button class="btn btn-filter-toggle" title="Filtros" type="button">
                     <i class="fas fa-sliders-h"></i>
                 </button>
             </div>
         </form>
-
+        <form class="form-filters col-md-6 col-12 mt-3 order-2 order-md-3" style="display: none;">
+            <div class="row">
+                <div class="col-12 ">
+                    <p><strong>Filtros avanzados</strong></p>
+                 </div>
+                <div class="col-md-4 mb-2 m-md-0">
+                    <label for="filtro1" class="sr-only">Filtro 1</label>
+                    <input type="text" class="form-control" id="filtro1" name="filtro1" placeholder="Filtro 1">
+                </div>
+                <div class="col-md-4 mb-2 m-md-0">
+                    <label for="filtro2" class="sr-only">Filtro 2</label>
+                    <input type="text" class="form-control" id="filtro2" name="filtro2" placeholder="Filtro 2">
+                </div>
+                <div class="col-md-4 mb-2 m-md-0">
+                    <label for="filtro3" class="sr-only">Filtro 3</label>
+                    <input type="text" class="form-control" id="filtro3" name="filtro3" placeholder="Filtro 3">
+                </div>
+            </div>
+        </form>
         <div class="col-md-8 d-flex mt-4 mt-md-0 order-3 order-md-2">
             <div class="dropdown ms-auto">
                 <button class="btn btn-outline-primary" type="button" id="exportar"
@@ -87,22 +105,7 @@
             </div>
         </div>
 
-        <form class="form-filters col-md-6 col-12 mt-3 order-2 order-md-3" style="display: none;">
-            <div class="row">
-                <div class="col-md-4 mb-2 m-md-0">
-                    <label for="filtro1" class="sr-only">Filtro 1</label>
-                    <input type="text" class="form-control mx-1" id="filtro1" name="filtro1" placeholder="Filtro 1">
-                </div>
-                <div class="col-md-4 mb-2 m-md-0">
-                    <label for="filtro2" class="sr-only">Filtro 2</label>
-                    <input type="text" class="form-control mx-1" id="filtro2" name="filtro2" placeholder="Filtro 2">
-                </div>
-                <div class="col-md-4 mb-2 m-md-0">
-                    <label for="filtro3" class="sr-only">Filtro 3</label>
-                    <input type="text" class="form-control mx-1" id="filtro3" name="filtro3" placeholder="Filtro 3">
-                </div>
-            </div>
-        </form>
+      
 
     </div>
 </div>

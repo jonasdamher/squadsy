@@ -1,5 +1,3 @@
-
-
 .main-view {
     width: 100%;
     margin-left: 230px;
@@ -71,13 +69,20 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 1em;
     width: 1em;
     border-radius: 50em;
-    background: url('/images/icons/times-solid.svg') no-repeat 50% 50%;
+    background: url("/images/icons/times-solid.svg") no-repeat 50% 50%;
     background-size: contain;
     opacity: 0;
     pointer-events: none;
-  }
-  
-  input[type="search"]:focus::-webkit-search-cancel-button {
-    opacity: .3;
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button {
+    opacity: 0.3;
     pointer-events: all;
-  }
+}
+
+.table {
+    td,
+    th {
+        vertical-align: middle;
+    }
+}

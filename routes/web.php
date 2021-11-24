@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,14 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [ArticlesController::class, 'index']);
+Route::get('/', [WebController::class, 'home'])->name('home');
 
-Route::prefix('/articles')->group( function () {
-    Route::get('/', [ArticlesController::class, 'index']);
-    Route::get('/new', [ArticlesController::class, 'create']);
-});
+Route::prefix('/dashboard')->group(function () {
 
-Route::prefix('/categories')->group( function () {
-    Route::get('/', [CategoriesController::class, 'index']);
-    Route::get('/new', [CategoriesController::class, 'create']);
+    Route::prefix('/articles')->group(function () {
+        Route::get('/', [ArticlesController::class, 'index'])->name('articleTable');
+        Route::get('/new', [ArticlesController::class, 'create']);
+    });
+
+    Route::prefix('/categories')->group(function () {
+        Route::get('/', [CategoriesController::class, 'index'])->name('categoryTable');
+        Route::get('/new', [CategoriesController::class, 'create']);
+    });
 });

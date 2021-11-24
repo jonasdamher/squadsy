@@ -2,9 +2,9 @@
         <div class="d-flex flex-column h-100">
             {{-- brand --}}
             <div class="py-3 px-4 border-bottom brand d-flex justify-content-center">
-                <a class="navbar-brand m-0 d-flex align-items-center" href="#" title="squadsy">
-                    <img src="{{ asset('images/logo.png') }}" class="logo" alt=".SQ" />
-                    <img src="{{ asset('images/logo-squadsy.png') }}" class="logo logo-lg" alt=".squadsy" />
+                <a class="navbar-brand m-0 d-flex align-items-center" href="#" title="{{env('APP_NAME')}}">
+                    <img src="{{ asset('images/logo.png') }}" class="logo" alt="{{env('APP_NAME')}}" />
+                    <img src="{{ asset('images/logo-squadsy.png') }}" class="logo logo-lg" alt="{{env('APP_NAME')}}" />
                 </a>
             </div>
             {{-- Menu --}}
@@ -16,8 +16,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#" title="Artículos">
-                        <span class="icon "><i class="fas fa-box"></i></span><span
+                    <a class="nav-link active" href="{{route('articleTable')}}" title="Artículos">
+                        <span class="icon"><i class="fas fa-box"></i></span><span
                             class="ps-2">Artículos</span>
                     </a>
                 </li>

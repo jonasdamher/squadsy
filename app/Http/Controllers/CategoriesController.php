@@ -9,6 +9,6 @@ class CategoriesController extends Controller
     public function index()
     {
 
-        return view('pages.categories.table');
+        return view('pages.dashboard.categories.table');
     }
 }

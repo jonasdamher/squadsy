@@ -14,7 +14,7 @@ class ArticlesController extends Controller
     public function index()
     {
 
-        return view('pages.articles.table');
+        return view('pages.dashboard.articles.table');
     }
 
     /**
@@ -25,7 +25,7 @@ class ArticlesController extends Controller
     public function create()
     {
 
-        return view('pages.articles.form');
+        return view('pages.dashboard.articles.form');
     }
 
     /**
