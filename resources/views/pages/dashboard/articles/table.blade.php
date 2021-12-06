@@ -14,23 +14,18 @@
 @section('table')
     <thead>
         <tr>
-            <th scope="col" class="border-top-0">Artículo <span class="ms-2 text-secondary"><i
-                        class="fas fa-sort"></i></span>
+            <th scope="col">Artículo <span class="ms-2 text-secondary"><i class="fas fa-sort"></i></span>
             </th>
-            <th scope="col" class="border-top-0">Proveedor<span class="ms-2 text-secondary"><i
-                        class="fas fa-sort"></i></span>
+            <th scope="col">Proveedor<span class="ms-2 text-secondary"><i class="fas fa-sort"></i></span>
             </th>
-            <th scope="col" class="border-top-0">Código de barras<span class="ms-2 text-secondary"><i
-                        class="fas fa-sort"></i></span></th>
-            <th scope="col" class="border-top-0">Unidades<span class="ms-2 text-secondary"><i
-                        class="fas fa-sort"></i></span></th>
-            <th scope="col" class="border-top-0">Estado<span class="ms-2 text-secondary"><i
-                        class="fas fa-sort"></i></span>
+            <th scope="col">Código de barras<span class="ms-2 text-secondary"><i class="fas fa-sort"></i></span></th>
+            <th scope="col">Unidades<span class="ms-2 text-secondary"><i class="fas fa-sort"></i></span></th>
+            <th scope="col">Estado<span class="ms-2 text-secondary"><i class="fas fa-sort"></i></span>
             </th>
-            <th scope="col" class="border-top-0"></th>
+            <th scope="col"></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="border-top-0">
         <tr>
             <th scope="row">
                 <div class="d-flex">
@@ -51,7 +46,7 @@
             </td>
             <td>
                 <div class="d-flex flex-column justify-content-center align-items-start fw-bold">
-                    <span ><small>32 totales</small></span>
+                    <span><small>32 totales</small></span>
                     <span class="text-success"><small>10 disponibles</small></span>
                 </div>
             </td>

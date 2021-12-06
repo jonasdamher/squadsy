@@ -4,8 +4,8 @@
 @import "dashboard/misc";
 
 @font-face {
-  src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
   font-family: "Montserrat";
+  src: local("Montserrat"),url("/fonts/Montserrat/Montserrat-Regular.ttf");
   font-style: normal;
   font-display: swamp;
 }
