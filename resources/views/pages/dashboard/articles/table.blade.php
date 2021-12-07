@@ -54,9 +54,9 @@
                 <span class="badge bg-success">Activo</span>
             </td>
             <td>
-                <a class="btn" href="#"><i class="fas fa-eye"></i></a>
-                <a class="btn" href="#"><i class="fas fa-pen"></i></a>
-                <button class="btn" type="button"><i class="fas fa-trash"></i></button>
+                <a class="btn" href="#" title="Ver"><i class="fas fa-eye"></i></a>
+                <a class="btn" href="#" title="Editar"><i class="fas fa-pen"></i></a>
+                <button class="btn" type="button" title="Eliminar"><i class="fas fa-trash"></i></button>
             </td>
         </tr>
     </tbody>

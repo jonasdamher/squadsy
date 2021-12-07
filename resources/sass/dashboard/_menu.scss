@@ -40,6 +40,13 @@
     }
 }
 
+.navbar-light .navbar-nav {
+    a.nav-link.active{
+        color:$blue;
+        font-weight: bold;
+    }
+}
+ 
 .bg-menu {
     position: fixed;
     left: 0;
@@ -103,6 +110,7 @@ span.icon {
         span.icon {
             width: 44px;
             font-size: 1.2rem;
+            display: flex;
         }
     }
 }

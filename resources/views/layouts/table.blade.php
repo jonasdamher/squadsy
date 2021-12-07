@@ -1,18 +1,18 @@
 <div class="col-12 border-bottom">
 
     <div class="d-flex justify-content-between align-items-center my-4">
-        <h1 class="h2 m-0">@yield('title')</h1>
+        <h1 class="h2 m-0"><strong>@yield('title')</strong></h1>
         <div class="d-flex ms-2">
-            <a href="@yield('btn-create-url')" class="btn btn-primary shadow-sm btn-new" title="@yield('btn-create')">
+            <a href="@yield('btn-create-url')" class="btn btn-primary shadow btn-new" title="@yield('btn-create')">
                 <span class="icon"><i class="fas fa-plus"></i></span><span
                     class="pl-2">@yield('btn-create')</span>
             </a>
             <div class="dropdown d-flex">
-                <button class="ms-2 btn " type="button" id="opciones" data-bs-toggle="dropdown"
+                <button class="ms-2 btn px-3" type="button" id="options" data-bs-toggle="dropdown"
                     aria-expanded="false" title="Configuración">
                     <i class="fas fa-ellipsis-v"></i>
                 </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="opciones">
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="options">
                     @section('navbar-table-options')
                     @show
                 </ul>
@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-12 ">
                     <p><strong>Filtros avanzados</strong></p>
-                 </div>
+                </div>
                 <div class="col-md-4 mb-2 m-md-0">
                     <label for="filtro1" class="sr-only">Filtro 1</label>
                     <input type="text" class="form-control" id="filtro1" name="filtro1" placeholder="Filtro 1">
@@ -56,8 +56,8 @@
         </form>
         <div class="col-md-8 d-flex mt-4 mt-md-0 order-3 order-md-2">
             <div class="dropdown ms-auto">
-                <button class="btn btn-outline-primary" type="button" id="exportar"
-                    data-bs-toggle="dropdown" aria-expanded="false" title="Exportar tabla">
+                <button class="btn btn-outline-primary" type="button" id="exportar" data-bs-toggle="dropdown"
+                    aria-expanded="false" title="Exportar tabla">
                     <span class="me-2"><i class="fas fa-file-export"></i></span>Exportar
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="exportar">
@@ -73,8 +73,8 @@
                 </ul>
             </div>
             <div class="dropdown">
-                <button class="ms-2 btn btn-outline-primary" type="button" id="columnas"
-                    data-bs-toggle="dropdown" aria-expanded="false" title="Mostrar columnas de tabla">
+                <button class="ms-2 btn btn-outline-primary" type="button" id="columnas" data-bs-toggle="dropdown"
+                    aria-expanded="false" title="Mostrar columnas de tabla">
                     <span class="me-2"><i class="fas fa-columns"></i></span>Columnas
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="columnas">
@@ -87,11 +87,11 @@
                 </ul>
             </div>
             <div class="dropdown">
-                <button class="ms-2 btn dropdown-toggle" type="button" id="opciones" data-bs-toggle="dropdown"
+                <button class="ms-2 btn dropdown-toggle" type="button" id="rowPages" data-bs-toggle="dropdown"
                     aria-expanded="false" title="Registros por página">
                     10
                 </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="opciones">
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="rowPages">
                     <li>
                         <button class="dropdown-item active" type="button">10</button>
                     </li>
@@ -104,9 +104,6 @@
                 </ul>
             </div>
         </div>
-
-      
-
     </div>
 </div>
 
