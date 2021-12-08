@@ -109,8 +109,8 @@
 
 <div class="col-12 mt-2">
 
-    <div class="table-responsive">
-        <table class="table">
+    <div class="table-responsive mb-3">
+        <table class="table m-0">
             @section('table')
             @show
         </table>

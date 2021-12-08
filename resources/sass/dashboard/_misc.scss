@@ -11,8 +11,9 @@
 
 .menu-short ~ div ~ .main-view {
     @media (min-width: 769px) {
+         width:calc(100% - 92px);
         margin-left: 92px;
-
+    
         .logo-lg {
             display: none;
         }
