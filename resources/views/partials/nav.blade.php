@@ -1,7 +1,7 @@
 <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
         <div class="container-fluid">
-            <button class="btn text-peimary toggle-menu mr-2" type="button" aria-label="Menu de navegación"
+            <button class="btn text-primary toggle-menu mr-2" type="button" aria-label="Menu de navegación"
                 title="Menu de navegación">
                 <i class="fas fa-stream fa-lg"></i>
             </button>
