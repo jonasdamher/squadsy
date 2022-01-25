@@ -31,7 +31,7 @@
                             <div class="dropdown-item">
                                 <div class="form-check form-switch">
                                     <input class="form-check-input" type="checkbox" role="switch" id="change-main-main">
-                                    <label class="form-check-label" for="change-main-main">
+                                    <label class="form-check-label w-100" for="change-main-main">
                                         Menu
                                     </label>
                                 </div>
